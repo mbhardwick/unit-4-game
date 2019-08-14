@@ -1,0 +1,12 @@
+.character {
+    border: solid 2px green;
+    float: left;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+#game {
+    clear: left;
+    margin-bottom: 200px;
+}
+
