@@ -4,64 +4,45 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Star Wars RPG</title>
+        <!-- CSS -->
         <link rel ="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel ="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- link to jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Star Wars RPG!</h1>
+        <div class="main-title">Star Wars RPG!</div>      
+        <div id="game-section">
 
-        <div>
-            <div class="character" id="rey"> Rey
-                <br>
-                <img src="assets/images/rey.jpg" alt="Rey" style="width:200px; height:150px;">
-                <br>
-                120
-            </div>
-
-            <div class="character" id="finn"> Finn
-                <br>
-                <img src="assets/images/finn.jpg" alt="Finn" style="width:200px; height:150px;">
-                <br>
-                100
-            </div>
-
-            <div class="character" id="kyloRen"> Kylo-Ren
-                <br>
-                <img src="assets/images/kylo-ren.jpg" alt="Kylo-Ren" style="width:200px; height:150px;">
-                <br>
-                150
-            </div>
-
-            <div class="character" id="phasma"> Captain Phasma
-                <br>
-                <img src="assets/images/captain-phasma.jpg" alt="Captain Phasma" style="width:200px; height:150px;">
-                <br>
-                180
-            </div> 
+        <div id="characters-section">
+            <div class="section-title">Select Your Fighter</div>
         </div>
         
-        <div id="game">
-            Your Fighter
-            <br>
-            <span class="fighter" id="player">Chosen image goes here</span>
+        <div id="selected-character">
+            <div class="section-title">Your Fighter</div>
+            <div id="selected-fighter"></div>
+        </div>
+        
+        <div id="available-enemies">
+            <div class="section-title">Enemies Available To Attack</div>
+        </div>
+        
+        <div class="section-title">Fight Section</div>
+        <div id="fight-section">
+            <button id="attack-button">Attack</button>
         </div>
 
-        <div>Enemies Available to Attack
-            <span id="enemies"></span>
+        <div id="action">
+            <div class="character-section">
+                <div class="section-title">Enemy</div>
+                <div id="enemy"></div>
+            </div>
         </div>
-
-        <div>Fight Section
-            <br>
-            <button type="button" id="attack">Attack</button>
-            <br> 
-            <span id="cpu">chosen image goes here</span>
-            <br>
-            <span id="info">attack/defend math --- win/lose</span>
-            <br>
-            <span id="reset">reset button</span>
-        </div>
-
-
+        <div id="game-message"></div>          
+    <!-- Game Logic -->
+    <script src="assets/javascript/game.js"></script>
 
     </body>
 </html>
