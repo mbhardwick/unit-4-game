@@ -1,3 +1,16 @@
+body {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 200%;
+    background-image: url(../images/xwing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-title {
+    font-size: 300%;
+    text-align: center;
+}
 .character {
     border: solid 2px green;
     float: left;
