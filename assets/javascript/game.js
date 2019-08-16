@@ -31,17 +31,28 @@ var characters = {
 };
 console.log(characters);
 
+var renderOne = function(character, renderArea) {
+    var charDiv = $("<div class='character' data-name=' " + character.name + "'>");
+    var charName = $("<div class='character-name'>").text(character.name);
+    var charImage = $("<img alt='image' class='character-image'>").attr("src", character.imageUrl);
+    var charHealth = $("<div class='character-health'>").text(character.health);
+    charDiv.append(charName).append(charImage).append(charHealth);
+    $(renderArea).append(charDiv);
+};
 var renderCharacters = function(charObj, areaRender){
-    if(arearender === "#charact")
-}
-
+    if(areaRender === "#characters-section") {
+        $(areaRender).empty();
+        for(var key in charObj) {
+            if(charObj.hasOwnProperty(key)) {
+                renderOne(charObj[key], areaRender);
+            }
+        }
+    }
+};
+renderCharacters(characters, "#characters-section");
 //Functions
 
 
-
-    $("character").on("click", function() {
-        console.log("click")
-    });
 
 
 });
