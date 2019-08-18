@@ -56,26 +56,26 @@ $(document).ready(function() {
             }
         }
 
-        // if (areaRender === "#selected-character") {
-        //     renderOne(charObj, areaRender, "");
-        // }
+        if (areaRender === "#selected-character") {
+            renderOne(charObj, areaRender, "");
+        }
 
-        // if (areaRender === "#available-enemies") {
-        //     for(var i = 0; i < charObj.length; i++) {
-        //         renderOne(charObj[i], areaRender, "enemy");
-        //     }
+        if (areaRender === "#available-enemies") {
+            for(var i = 0; i < charObj.length; i++) {
+                renderOne(charObj[i], areaRender, "enemy");
+            }
 
-        //     // on click event for each enemy
-        //     $(document).on("click", ".enemy", function() {
-        //         var name = ($(this).attr("data-name"));
-        //         // if no enemy clicked character will become
-        //         if($("#enemy").children().length ===0) {
-        //             renderCharacters(name, "#enemy");
-        //             $(this).hide();
-        //         }
-        //     });
+            // on click event for each enemy
+            $(document).on("click", ".enemy", function() {
+                var name = ($(this).attr("data-name"));
+                // if no enemy clicked character will become
+                if($("#enemy").children().length ===0) {
+                    renderCharacters(name, "#enemy");
+                    $(this).hide();
+                }
+            });
 
-        // }
+        }
     };
     //render characters to page at start
     renderCharacters(characters, "#characters-section");
