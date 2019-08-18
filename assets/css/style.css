@@ -5,10 +5,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-.section-title {
-    color: #e74456;
+.section-title {   
     font-size: 200%;
+    font-weight: bold;
 }
 img {
     height: 100px;
@@ -20,7 +19,6 @@ img {
     text-align: center;
     color: #e74456;
 }
-
 .character {
     display: inline-block;
     border-color: #e74456;
@@ -29,14 +27,12 @@ img {
     cursor: pointer;
     background-color: white;
 }
-
 .character-image {
     padding-right: 16px;
     padding-left: 16px;
     margin-top: 3px;
     margin-bottom: 3px;
 }
-
 .character-name, .character-health {
     text-align: center;
 }
